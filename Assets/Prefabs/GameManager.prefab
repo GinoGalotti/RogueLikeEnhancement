@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &115816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 407036}
+  - 114: {fileID: 11476500}
+  - 114: {fileID: 11421026}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407036
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11421026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bacc1ae5b1dc94a8d47f51e81f71c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 142986, guid: a8e23997b8fcb6a41b541879cebc840c, type: 2}
+  floorTiles:
+  - {fileID: 119108, guid: 397fc410566ca9b44955ee3dc2b09136, type: 2}
+  - {fileID: 186370, guid: 72d5c3e0529cc924f9e5334596647abd, type: 2}
+  - {fileID: 107572, guid: ba0532a17e5ee694f95bc6ad66286722, type: 2}
+  - {fileID: 114890, guid: f6aa53d65734ec24b9543fad0b5bf888, type: 2}
+  - {fileID: 174444, guid: cc77b037e748d9a4d82e5c650dd48187, type: 2}
+  - {fileID: 141416, guid: 516ddd3b4716bef4f99c8be6c5a9677e, type: 2}
+  - {fileID: 148100, guid: 4bddf27b98860a24399dd22253a8bf8d, type: 2}
+  - {fileID: 126418, guid: 3ccd623ddb353344594c55bed0e32f7f, type: 2}
+  wallTiles:
+  - {fileID: 129204, guid: 62410cb30fdbaeb43b0ae20a548c3f00, type: 2}
+  - {fileID: 156492, guid: 8ea598f31faaac946a6e312993738ed7, type: 2}
+  - {fileID: 114774, guid: 1f35dae4fd351104db5e6c6ab20435fe, type: 2}
+  - {fileID: 128336, guid: 503a0e07977659244bac10e1cfe1ab4f, type: 2}
+  - {fileID: 160170, guid: b45b08476ed3f314aabe223f5d7f39f0, type: 2}
+  - {fileID: 176054, guid: 73e1c097584b8fa47ab8bcacbc98d758, type: 2}
+  - {fileID: 146650, guid: 4685f11adca61e3469033f603aa54305, type: 2}
+  - {fileID: 105818, guid: bb30507b50088bf4690424716f428268, type: 2}
+  foodTiles:
+  - {fileID: 182800, guid: d651c931a0f43eb41b32ecb59f835ad0, type: 2}
+  - {fileID: 193342, guid: 844bce6cd88767b45beeb91c47326355, type: 2}
+  enemyTiles:
+  - {fileID: 147892, guid: eae3f9db53d5eb64eaeb852425e2c4b6, type: 2}
+  - {fileID: 132878, guid: 226c51cf3db226347b1fe802f18c8fa3, type: 2}
+  - {fileID: 127834, guid: 9fc900e784bd0ec4c82178fe29386de8, type: 2}
+  - {fileID: 114356, guid: 223c0d4c85d8b02448235cba82418ca7, type: 2}
+  outerWallTiles:
+  - {fileID: 185350, guid: 126076764a3a2704c9bcd8e071de883c, type: 2}
+  - {fileID: 116686, guid: 5970fb7ad513ebc43bc1d7bc284b6ace, type: 2}
+  - {fileID: 178676, guid: 00e20f6f2c2d7f74cba4af6759e2410b, type: 2}
+  powerUpTiles:
+  - {fileID: 138834, guid: de6b8b2e4a670bb409afaabea4368b9b, type: 2}
+  - {fileID: 123414, guid: e00c58955bbe53342bd9465900e788ad, type: 2}
+  - {fileID: 126472, guid: cd16b05d2b8435c48ba80a5934adb1aa, type: 2}
+--- !u!114 &11476500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49329dfdfd40d6d4f90e9484bb097592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFoodPoints: 100
+  playersTurn: 1
+  restartLevelDelay: 1
+  boardScript: {fileID: 0}
+  playerScript: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 115816}
+  m_IsPrefabParent: 1
